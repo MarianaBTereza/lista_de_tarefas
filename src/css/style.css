@@ -1,0 +1,145 @@
+/* Geral  */
+*{
+    padding: 0;
+    margin: 0;
+    font-family: Helvetica;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url("../assets/img/ghibli.jpeg");
+    background-position: center;
+    background-size: cover;
+
+
+}
+
+button{
+    background-color: #FDFD;
+    color: #66ffb3;
+    border: 2px solid #66ffb3;
+    padding: .3rem .6rem ;
+    font-size: 1rem;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.4s;
+}
+
+button:hover{ 
+    background-color: #66ffb3;
+    background-color: beige;
+
+}
+
+button:hover > i{
+    color: beige;
+
+}
+button i {
+    color: #66ffb3;
+    font-weight: bold;
+    pointer-events: none ;
+}
+
+input, select{
+    padding: .25rem  .5rem ;
+}
+
+.hide{
+    display: none ;
+}
+
+/* Todo Header */
+.todo-container{
+    max-width: 450px;
+    margin:3rem auto  ;
+    background-color: #FDFD;
+    padding: 1.5rem ;
+    border-radius: 15px ;
+
+
+}
+
+.todo-container header{
+    text-align: center;
+    padding: 0 1 rem 1 rem ;
+    border-bottom: 1px solid #ccc;
+}
+
+/* TODO FORM */
+#todo-form , #edit-todo {
+    padding: 1rem ;
+    border-bottom: 1px solid #ccc;
+
+}
+
+#todo-form p,
+#edit-todo p{
+    margin-bottom: .5rem ;
+    font-weight: bold;
+}
+
+.form-control{
+    display: flex;
+
+}
+.form-control input{
+    margin-right: 0.3rem;
+}
+#cancel-edit-btn{
+    margin-top: 1rem ;
+}
+   
+/*todo toolbar*/
+#toolbar{
+    padding: 1rem ;
+    border-bottom: 1px solid #ccc;
+    display: flex ;
+}
+#toolbar h4 {
+    margin-bottom: .5rem ;
+}
+
+#search{
+    border-right: 1px solid #ddd;
+    padding-right: 1rem ;
+    width: 65%;
+    display: flex;
+    flex-direction: column;
+}
+#search form{
+    display: flex;
+
+}
+
+#search input{
+    width: 100%;
+    margin-right: 0.3rem ;
+}
+#filter{
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+}
+#filter select{
+    flex: 1;
+}
+/* Todo List */
+.todo{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1 rem ;
+    border-bottom: 1px solid #dddd;
+    transition: .3s;
+
+}
+.todo h3{
+    flex: 1;
+    font-size: 0.9rem ;
+}
+.todo button{
+    
+}
