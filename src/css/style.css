@@ -141,5 +141,14 @@ input, select{
     font-size: 0.9rem ;
 }
 .todo button{
+    margin-left:0.4 rem   ;
+}
+.done{
+    background-color: #03e775;
+}
+.done h3{
+    color: #FDFD;
+    text-decoration: line-through;
+    font-style: italic;
     
 }
